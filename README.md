@@ -65,6 +65,28 @@ The startup scripts will:
 - Install/upgrade all dependencies
 - Start the Bokeh server
 
+### Restarting the Server
+
+If you need to restart the server (e.g., after making code changes):
+
+**Windows:**
+```bash
+restart_server.bat
+```
+Or simply double-click `restart_server.bat`
+
+**Unix/Linux/Mac:**
+```bash
+./restart_server.sh
+```
+
+The restart scripts will:
+- Stop any existing server processes on port 5006
+- Create/activate the virtual environment
+- Install/upgrade dependencies
+- Start the Bokeh server
+- Automatically open the dashboard in your browser
+
 ### Manual Start
 
 1. Activate the virtual environment:
@@ -158,8 +180,3 @@ CursorCost/
 ## License
 
 This project is provided as-is for analyzing Cursor usage costs.
-
-## TODO
-- restart_server.bat should open the browser to the dashboard
-- the program should have a virtual python environment and should not use the global python environment
-- produce restart_server.sh for mac os, same behavior as restart_server.bat
