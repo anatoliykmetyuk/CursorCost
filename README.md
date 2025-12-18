@@ -1,5 +1,13 @@
 # Cursor Cost Analysis Dashboard
 
+![Cursor Cost Analysis Dashboard](screenshot.png)
+
+## Quick Start
+
+1. Navigate to https://cursor.com/dashboard?tab=usage -> Download as CSV
+2. Create a `data` folder in the root of the repo and put the CSV into the data/ folder
+3. Run `start.sh` or `start.bat` depending on the OS
+
 An interactive Bokeh web application for analyzing Cursor usage costs from CSV files. The dashboard provides multiple visualizations including time series charts, cost breakdowns by model and kind, and interactive filtering capabilities.
 
 ## Features
@@ -19,30 +27,6 @@ An interactive Bokeh web application for analyzing Cursor usage costs from CSV f
 - Python 3.8 or higher
 - Bokeh 3.0.0 or higher
 - Pandas 2.0.0 or higher
-
-## Setup
-
-### 1. Create Virtual Environment
-
-Create an isolated Python environment:
-
-**Windows:**
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-**Unix/Linux/Mac:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Running the Application
 
