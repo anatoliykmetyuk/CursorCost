@@ -10,6 +10,26 @@
 
 An interactive Bokeh web application for analyzing Cursor usage costs from CSV files. The dashboard provides multiple visualizations including time series charts, cost breakdowns by model and kind, and interactive filtering capabilities.
 
+## Quick Start
+
+Get started in just a few steps:
+
+1. **Clone the repository** (if you haven't already):
+   ```bash
+   git clone https://github.com/anatoliykmetyuk/CursorCost.git
+   cd CursorCost
+   ```
+
+2. **Run the startup script**:
+   - **Windows**: Double-click `start.bat` or run `start.bat` in terminal
+   - **Unix/Linux/Mac**: Run `./start.sh`
+
+   The script will automatically set up the virtual environment, install dependencies, and launch the dashboard in your browser.
+
+3. **View your data**: Place your CSV files in the `data/` folder, or use the upload feature in the dashboard.
+
+That's it! The dashboard will open at `http://localhost:5006`.
+
 ## Features
 
 - **Automatic CSV Loading**: Automatically loads the latest CSV file from the `data/` folder
